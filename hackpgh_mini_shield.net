@@ -1,0 +1,80 @@
+# EESchema Netlist Version 1.1 created  Sat 21 Jan 2012 08:31:34 PM EST
+(
+ ( /4F1B64D4 $noname  R2 1k {Lib=R}
+  (    1 N-000003 )
+  (    2 N-000005 )
+ )
+ ( /4F1B64C7 $noname  R1 1k {Lib=R}
+  (    1 N-000002 )
+  (    2 N-000004 )
+ )
+ ( /4F1B64AD $noname  D2 LED {Lib=LED}
+  (    1 N-000005 )
+  (    2 /GND )
+ )
+ ( /4F1B649C $noname  D1 LED {Lib=LED}
+  (    1 N-000004 )
+  (    2 /GND )
+ )
+ ( /4F1B648D $noname  P1 CONN_4 {Lib=CONN_4}
+  (    1 N-000003 )
+  (    2 N-000002 )
+  (    3 ? )
+  (    4 /GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 2 "" ""
+ P1 2
+ R1 1
+Net 3 "" ""
+ P1 1
+ R2 1
+Net 4 "" ""
+ D1 1
+ R1 2
+Net 5 "" ""
+ R2 2
+ D2 1
+Net 6 "/GND" "GND"
+ D2 2
+ D1 2
+ P1 4
+}
+#End
